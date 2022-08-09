@@ -16,6 +16,11 @@ use Inertia\Inertia;
 */
 
 Route::get('/', function () {
+    return Inertia::render('/resources/js/Pages/App.vue');
+})->name('dashboard');
+
+
+Route::get('/welcome', function () {
     return Inertia::render('Welcome', [
         'canLogin' => Route::has('login'),
         'canRegister' => Route::has('register'),
@@ -23,6 +28,7 @@ Route::get('/', function () {
         'phpVersion' => PHP_VERSION,
     ]);
 });
+
 
 Route::middleware([
     'auth:sanctum',
@@ -32,4 +38,4 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return Inertia::render('Dashboard');
     })->name('dashboard');
-});
+});;

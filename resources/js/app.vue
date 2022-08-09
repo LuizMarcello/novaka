@@ -1,9 +1,9 @@
-<template>
+<!-- <template>
   <div>
     <InputText />
     <Button label="Greet"></Button>>
   </div>
-</template>
+</template> -->
 
 <script type="text/babel">
 import Vue from "../node_modules/vue/dist/vue.js";

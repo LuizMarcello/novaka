@@ -5,6 +5,8 @@ import {
     createApp,
     h
 } from 'vue';
+import App from './Pages/App.vue';
+
 import {
     createInertiaApp
 } from '@inertiajs/inertia-vue3';
@@ -18,9 +20,10 @@ import {
     ZiggyVue
 } from '../../vendor/tightenco/ziggy/dist/vue.m';
 
-import PrimeVue from 'primevue/config';
-import Button from 'primevue/button';
-import InputText from 'primevue/inputtext';
+import PrimeVue from 'primevue/config'
+import Button from 'primevue/button'
+import InputText from 'primevue/inputtext'
+/* import Toast from 'primevue/toast' */
 
 import 'primevue/resources/themes/saga-blue/theme.css' //theme
 import 'primevue/resources/primevue.min.css' //core css
@@ -28,17 +31,16 @@ import 'primeicons/primeicons.css' //icons
 
 /* import Dialog from 'primevue/dialog'; */
 
-const appName = window.document.getElementsByTagName('title')[0] ?.innerText || 'Laravel';
-
-import App from './App.vue';
+const appName = window.document.getElementsByTagName('title')[0]?.innerText || 'Laravel';
 
 const app = createApp(App);
 
 app.use(PrimeVue);
 
-app.component('Dialog', Dialog);
+/* app.component('Dialog', Dialog); */
 app.component('InputText', InputText);
 app.component('Button', Button);
+/* app.component('Toast', Toast); */
 
 app.mount('#app')
 
