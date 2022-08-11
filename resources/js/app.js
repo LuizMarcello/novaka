@@ -20,27 +20,32 @@ import {
     ZiggyVue
 } from '../../vendor/tightenco/ziggy/dist/vue.m';
 
+import 'primevue/resources/themes/saga-blue/theme.css'; //theme
+/* import '../../node_modules/primevue/resources/themes/saga-blue/theme.css'; */ //theme
+
+import 'primevue/resources/primevue.min.css'; //core css
+/* import '../../node_modules/primevue/resources/primevue.min.css' */ //core css
+
+import 'primeicons/primeicons.css'; //icons
+/* import '../../node_modules/primeicons/primeicons.css' */ //icons
+
+/* import PrimeVue from 'primevue/config' */
 import PrimeVue from 'primevue/config'
 import Button from 'primevue/button'
 import InputText from 'primevue/inputtext'
-/* import Toast from 'primevue/toast' */
+import Toast from 'primevue/toast'
+import ToastService from 'primevue/toastservice';
 
-import 'primevue/resources/themes/saga-blue/theme.css' //theme
-import 'primevue/resources/primevue.min.css' //core css
-import 'primeicons/primeicons.css' //icons
-
-/* import Dialog from 'primevue/dialog'; */
-
-const appName = window.document.getElementsByTagName('title')[0]?.innerText || 'Laravel';
+const appName = window.document.getElementsByTagName('title')[0] ?.innerText || 'Laravel';
 
 const app = createApp(App);
 
 app.use(PrimeVue);
+app.use(ToastService)
 
-/* app.component('Dialog', Dialog); */
 app.component('InputText', InputText);
 app.component('Button', Button);
-/* app.component('Toast', Toast); */
+app.component('Toast', Toast);
 
 app.mount('#app')
 
