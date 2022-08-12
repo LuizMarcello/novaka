@@ -1,11 +1,12 @@
 <template>
   <div>
-   <!--  <InputText v-model="text" /> -->
+    <!--  <InputText v-model="text" /> -->
     <Button label="Greet" icon="pi pi-user"></Button>
     <i icon="pi pi-align-right">BENTLEY BRASIL</i>
     <!-- <Toast /> -->
     <!-- {{ text }} -->
     <!--  <FloatLabel></FloatLabel> -->
+    <!-- <welcome /> -->
     <float-label />
   </div>
 </template>
@@ -51,7 +52,7 @@ export default {
 </script>
 
 <!-- <style>
-#app {
+ #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   text-align: center;
   color: #2c3e50;

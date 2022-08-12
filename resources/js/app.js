@@ -5,7 +5,8 @@ import {
     createApp,
     h
 } from 'vue';
-import App from './Pages/App.vue';
+//import App from './Pages/App.vue';
+import App from './app.vue';
 
 import {
     createInertiaApp
@@ -21,15 +22,11 @@ import {
 } from '../../vendor/tightenco/ziggy/dist/vue.m';
 
 import 'primevue/resources/themes/saga-blue/theme.css'; //theme
-/* import '../../node_modules/primevue/resources/themes/saga-blue/theme.css'; */ //theme
 
 import 'primevue/resources/primevue.min.css'; //core css
-/* import '../../node_modules/primevue/resources/primevue.min.css' */ //core css
 
 import 'primeicons/primeicons.css'; //icons
-/* import '../../node_modules/primeicons/primeicons.css' */ //icons
 
-/* import PrimeVue from 'primevue/config' */
 import PrimeVue from 'primevue/config'
 import Button from 'primevue/button'
 import InputText from 'primevue/inputtext'

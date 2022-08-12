@@ -1,11 +1,19 @@
-<!-- <template>
+<template>
   <div>
-    <InputText />
-    <Button label="Greet"></Button>>
+    <!--  <InputText v-model="text" /> -->
+    <Button label="Greet" icon="pi pi-user"></Button>
+    <i icon="pi pi-align-right">BENTLEY BRASIL</i>
+    <!-- <Toast /> -->
+    <!-- {{ text }} -->
+    <!--  <FloatLabel></FloatLabel> -->
+    <!-- <welcome /> -->
+    <float-label />
   </div>
-</template> -->
+</template>
 
 <script type="text/babel">
+import FloatLabel from "/Components/floatlabel.vue";
+
 import Vue from "../node_modules/vue/dist/vue.js";
 import VueRouter from "vue-router";
 
@@ -14,6 +22,12 @@ import routes from "./routes.js";
 import colorschema from "./colorschema.json";
 
 Vue.use(VueRouter);
+
+export default {
+  components: {
+    FloatLabel,
+  },
+};
 
 const router = new VueRouter({
   routes: routes,
